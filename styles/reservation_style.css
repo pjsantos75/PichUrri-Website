@@ -1,0 +1,121 @@
+@import url(index_style.css)
+
+/* ============= estilizar as quatro seccoes do hero ============= */
+
+hero{
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.hero-reservation-grid{
+    margin-left: 60px;
+    padding: 20px;
+    width: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    margin-right: 80px;
+}
+
+.reservation-image img{
+    width: 700px;
+    height: auto;
+    border-radius: 10%;
+}
+
+.grow img{
+    transition: 1s ease;
+}
+    
+.grow img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+.reservation-form{
+    padding: 20px;
+}
+
+.reservation-form h1{
+    margin-top: 0px;
+    margin-left: 15px;
+    font: bolder;
+    color: rgb(1, 14, 1);
+}
+
+.reservation-form fieldset{
+    color: rgb(43, 40, 40);
+    font-size: large;
+    font-weight: 200px;
+}
+
+.reservation-form legend{
+    color: rgb(218, 21, 21);
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.reservation-form label{
+    color: rgb(226, 236, 226);
+    font-size:large;
+}
+
+.billing p{
+    color: rgb(226, 236, 226);
+    font-size:large;
+}
+
+.name-grid{
+    box-sizing: border-box;
+    display: inline;
+    grid-template-columns: repeat(4, 1fr) 80px;
+    align-items: right;
+    column-gap: 20px;
+}
+
+.costumer-grid{
+    box-sizing: border-box;
+    display: inline;
+}
+
+.contacts-grid{
+    box-sizing: border-box;
+    display: inline;
+    grid-template-columns: repeat(4, 1fr) 80px;
+    align-items: right;
+}
+
+.billing{
+    box-sizing: border-box;
+    display: inline;
+}
+
+.datetime{
+    box-sizing: border-box;
+    display: flex;
+    column-gap: 20px;
+}
+
+.spaces-flex{
+    box-sizing: border-box;
+    display: flex;
+    column-gap: 5px;
+}
+
+.occupation{
+    box-sizing: border-box;
+    display: flex;
+    column-gap: 30px;
+}
+
+.babychair{
+    box-sizing: border-box;
+    display: flex;
+    column-gap: 30px;
+}
+
+

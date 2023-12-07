@@ -1,0 +1,125 @@
+@import url(index_style.css)
+
+.description-space p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;     /* fallback */
+    -webkit-line-clamp: 6; /* number of lines to show */
+    -webkit-box-orient: vertical;
+ }
+
+.service{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.service .space-list{
+    width: 90%;
+    position: relative;
+    left: 0px;
+    margin-top: 0px;
+}
+
+.service .service-spaces h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+}
+
+.service .space-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.service .space-list .card{
+    width: 600px;
+    height: 450px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    outline: 2px solid orangered;
+}
+
+.service .space-list .card img{
+    width: 500px;
+    height: 300px;
+    top: 160px;
+    left: 60px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgb(146, 101, 84);
+}
+
+/* fonte: https://thebrandsmen.com/css-image-hover-effects/ */
+
+.rotate img{
+    transition: 1s ease;
+    }
+    
+.rotate img:hover{
+    -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+    transition: 1s ease;
+}
+
+.shadow img{
+    transition: .5s ease;
+}
+    
+.shadow img:hover{
+    box-shadow:
+    1px 1px red,
+    2px 2px green,
+    3px 3px red,
+    4px 4px, red,
+    5px 5px red,
+    6px 6px red;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    transition: .5s ease;
+}
+
+.brighten img {
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+    
+.brighten img:hover {
+    -webkit-filter: brightness(120%);
+}
+
+/* fim das animações hover */
+
+.service .space-list .card .space-tittle{
+    padding: 40px 0 10px;
+}
+
+.service .space-list .card .space-tittle h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.service .card .description-space p{
+    font-size: 13px;
+    text-align:justify;
+    line-height: 17px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
