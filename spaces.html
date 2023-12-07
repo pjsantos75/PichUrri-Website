@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaces</title>
+    <link rel="stylesheet" href="./styles/index_style.css">
+
+</head>
+<body>
+    <!--- Aqui será definida uma secção nav, cuja posição será fixa no topo da página-->
+    <nav>
+        <div class="logotipo"><p1>Pich</p1><b>U</b><p2>rri</p2></div>
+        
+        <div class ="list-nav">
+            <ul> 
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./spaces.html">Spaces</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+            </ul>
+        </div>
+
+        <img src="./assets/images/Mexico_flag.jpg" alt="Flag" class="nav-image">   
+    </nav>
+    <hr> 
+    <!-- terminam os elementos da secção nav-->
+
+    <!--- Agora será definida uma secção service para os espaços -->
+
+    <section class="service">
+        <div class="service-spaces">
+            <h3>Our Dinning Spaces</h3>
+            <div class="space-list">
+                <div class="card">
+                    <div class="rotate">
+                        <img src="./assets/images/spaces/upper room.jpg" alt="upper">
+                    </div>    
+                    <div class="space-title">
+                        <h1>Mariachis Room</h1>
+                    </div>
+                    <div class="description-space">
+                        <p>Do you like Mariachis? <br>
+                            <br>
+                            Experience an evening of fine dining with a view and lively mariachi music. Enjoy a delicious Mexican meal at our Mariachis dining room. Afterwards, sing and dance to mariachi music.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="shadow">
+                        <img src="./assets/images/spaces/frida.jpg" alt="frida">
+                    </div>
+
+                    <div class="space-title">
+                        <h1>Frida Room</h1>
+                    </div>
+                    <div class="description-space">
+                        <p>Want to meet Frida? <br>
+                            <br>
+                            Experience a memorable dinner evening in our Frida dinning room, enjoying an immersive experience about the biography and life of Frida Kahlo.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="brighten">
+                        <img src="./assets/images/spaces/Mayas room.jpg" alt="mayas">
+                    </div>
+
+                    <div class="space-title">
+                        <h1>Mayas Room</h1>
+                    </div>
+                    <div class="description-space">
+                        <p>Do you know Maya civilization? <br>
+                            <br>
+                            Treat your family or friends to an immersive dinner in a Mayan environment, and get to know the culture and customs of an ancient civilization.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="rotate">
+                        <img src="./assets/images/spaces/riviera.jpg" alt="riviera">
+                    </div>
+                        
+                    <div class="space-title">
+                        <h1>Riviera Room</h1>
+                    </div>
+                    <div class="description-space">
+                        <p>How about a meal with a sea view? <br>
+                            <br>
+                            The best is the Riviera terrace, where you can enjoy the best of local cuisine. Here, the warm nights are lit up and have live music and shows.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </section>
+
+    <!--- A seguir será definida secção footer com quatro secções em display grid -->
+    <footer>
+            <hr>
+            <br>
+            <div class="footer-grid">
+                <div class="footergrid-logoicon">
+                    <div class="logotipo"><p1>Pich</p1><b>U</b><p2>rri</p2></div>
+                    <h2>We're here!</h2>
+                    
+                    <!--- icons de https://fontawesome.com/icons-->
+                    <div class="logoicon-media">
+                        <a href="https://www.instagram.com/" class="icon-link">
+                            <img class="image-icon" src="./assets/icons/instagram.jpg" alt="instagram"></a>
+                        <a href="https://twitter.com/tweeter" class="icon-link">
+                            <img class="image-icon" src="./assets/icons/tweeter.png" alt="tweeter"></a>
+                        <a href="https://web.whatsapp.com/" class="icon-link">
+                            <img class="image-icon" src="./assets/icons/whattsapp.png" alt="whattsapp"></a>
+                        <a href="https://www.facebook.com/" class="icon-link">
+                            <img class="image-icon" src="./assets/icons/facebook.jpg" alt="facebook"></a>
+                    </div>
+                </div>
+    
+                <ul class="footer-grid-list">
+                    <li><h3>Spaces</h3></li>
+                    <li><a href="./spaces.html" class="footer-link">Mariachis Room</a></li>
+                    <li><a href="./spaces.html" class="footer-link">Frida Room</a></li>
+                    <li><a href="./spaces.html" class="footer-link">Mayas Room</a></li>
+                    <li><a href="./spaces.html" class="footer-link">Riviera Terrace</a></li>
+                </ul>
+    
+                <ul class="footer-grid-list">
+                    <li><h3>Menu</h3></li>
+                    <li><a href="./menu.html" class="footer-link">Appetizer</a></li>
+                    <li><a href="./menu.html" class="footer-link">Seafood Dishes</a></li>
+                    <li><a href="./menu.html" class="footer-link">Meat Dishes</a></li>
+                    <li><a href="./menu.html" class="footer-link">Desserts</a></li>
+                </ul>
+    
+                <div class="footer-grid-news">
+                    <h3>Newsletter</h3>
+                    <p>Enter your e-mail here! </p>
+    
+                    <div class="input-email">
+                        <input type="email" id="email">
+                        <button><i class="fa-solid fa-envelope"></i></button>
+                    </div>
+                
+                    <div class="footer-copyright">
+                        <p>&#169 2023 Paulo Santos<br> 
+                        All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>    
+    </footer>
+</body>
+</html>
+

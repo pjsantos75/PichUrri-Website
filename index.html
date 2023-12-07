@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PichUrri</title>
+    <link rel="stylesheet" href="./styles/index_style.css">
+
+</head>
+<body>
+    <!--- Aqui será definida uma secção nav no topo da página-->
+    <nav>
+        <div class="logotipo"><p1>Pich</p1><b>U</b><p2>rri</p2></div>
+        
+        <div class ="list-nav">
+            <ul> 
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./spaces.html">Spaces</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+            </ul>
+        </div>
+
+        <img src="./assets/images/Mexico_flag.jpg" alt="Flag" class="nav-image">   
+        
+    </nav>  <!-- terminam os elementos da secção nav-->
+    <hr>
+
+    <!--- A seguir será definida uma secção hero com três secções em display grid -->
+    <hero>
+        <div class="hero-grid">
+            <div class="hero-item">
+                <div class="information">
+                    <h1>Hello!</h1>
+                    <h1>Welcome to PichUrri!</h1>
+                    <p>Experience the traditional Mexican cuisine!</p><br>
+                    <div class="hero-buttons">
+                        <a class="hero-buttons-link" href="./menu.html">See our Menu!</a>
+                        <a class="hero-buttons-link" href="./reservation.html">Make a reservation!</a>
+                    </div>
+                </div> 
+                <img src="./assets/images/mesa-restaurante-mexicano.jpg">
+            </div>
+
+            <div class="hero-item">
+                <img src="./assets/images/Chili+Con+Carne.jpeg">
+                <div class="information">
+                    <h1>Try our best meal dishes!</h1><br>
+                    <p>Our meat dishes are made with meat from cattle,<br><br>
+                         fed only with what the field provides!</p>
+                         <div class="hero-buttons">
+                            <a class="hero-buttons-link" href="./menu.html">See our Menu!</a>
+                            <a class="hero-buttons-link" href="./reservation.html">Make a reservation!</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="hero-item">
+                <div class="information">
+                    <h1>Taste the freshest fish!</h1><br>
+                    <p>Fish dishes are made with the freshest fish,<br><br>
+                     caught in an artisanal by local fishermen.</p>
+                     <div class="hero-buttons">
+                        <a class="hero-buttons-link" href="./menu.html">See our Menu!</a>
+                        <a class="hero-buttons-link" href="./reservation.html">Make a reservation!</a>
+                    </div>
+                </div> 
+                <img src="./assets/images/pescado-a-la-talla.jpg">   
+            </div>
+
+            <div class="hero-item">
+                <img src="./assets/images/desserts.jpg">
+                <div class="information">
+                    <h1>Have a delicious Mexican dessert!</h1><br>
+                    <p>Indulge in one of our desserts!<br><br>
+                        Our desserts are not a sin for gluttony!</p>
+                        <div class="hero-buttons">
+                            <a class="hero-buttons-link" href="./menu.html">See our Menu!</a>
+                            <a class="hero-buttons-link" href="./reservation.html">Make a reservation!</a>
+                        </div>
+                </div>    
+            </div>
+        </div>    
+    </hero> <!-- terminam os elementos da secção hero-->
+
+    <!--- A seguir será definida secção footer com quatro secções em display grid -->
+    <footer>
+        <hr>
+        <br>
+        <div class="footer-grid">
+            <div class="footergrid-logoicon">
+                <div class="logotipo"><p1>Pich</p1><b>U</b><p2>rri</p2></div>
+                <h2>We're here!</h2>
+                
+                <!--- icons de https://fontawesome.com/icons-->
+                <div class="logoicon-media">
+                    <a href="https://www.instagram.com/" class="icon-link">
+                        <img class="image-icon" src="./assets/icons/instagram.jpg" alt="instagram"></a>
+                    <a href="https://twitter.com/tweeter" class="icon-link">
+                        <img class="image-icon" src="./assets/icons/tweeter.png" alt="tweeter"></a>
+                    <a href="https://web.whatsapp.com/" class="icon-link">
+                        <img class="image-icon" src="./assets/icons/whattsapp.png" alt="whattsapp"></a>
+                    <a href="https://www.facebook.com/" class="icon-link">
+                        <img class="image-icon" src="./assets/icons/facebook.jpg" alt="facebook"></a>
+                </div>
+            </div>
+
+            <ul class="footer-grid-list">
+                <li><h3>Spaces</h3></li>
+                <li><a href="./spaces.html" class="footer-link">Mariachis Room</a></li>
+                <li><a href="./spaces.html" class="footer-link">Frida Room</a></li>
+                <li><a href="./spaces.html" class="footer-link">Mayas Room</a></li>
+                <li><a href="./spaces.html" class="footer-link">Riviera Terrace</a></li>
+            </ul>
+
+            <ul class="footer-grid-list">
+                <li><h3>Menu</h3></li>
+                <li><a href="./menu.html" class="footer-link">Appetizer</a></li>
+                <li><a href="./menu.html" class="footer-link">Seafood Dishes</a></li>
+                <li><a href="./menu.html" class="footer-link">Meat Dishes</a></li>
+                <li><a href="./menu.html" class="footer-link">Desserts</a></li>
+            </ul>
+
+            <div class="footer-grid-news">
+                <h3>Newsletter</h3>
+                <p>Enter your e-mail here! </p>
+
+                <div class="input-email">
+                    <input type="email" id="email">
+                    <button><i class="fa-solid fa-envelope"></i></button>
+                </div>
+            
+                <div class="footer-copyright">
+                    <p>&#169 2023 Paulo Santos<br> 
+                    All Rights Reserved</p>
+                </div>
+            </div>
+        </div>    
+    </footer>
+
+</body>
+</html>

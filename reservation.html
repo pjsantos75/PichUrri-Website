@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./styles/index_style.css">
+
+</head>
+<body>
+    <!--- Aqui será definida uma secção nav, cuja posição será fixa no topo da página-->
+    <nav>
+        <div class="logotipo"><p1>Pich</p1><b>U</b><p2>rri</p2></div>
+        
+        <div class ="list-nav">
+            <ul> 
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./spaces.html">Spaces</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+            </ul>
+        </div>
+        
+        <img src="./assets/images/Mexico_flag.jpg" alt="Flag" class="nav-image">   
+    </nav>
+    <hr> 
+    <!-- terminam os elementos da secção nav-->
+    
+    
+    <!--- A seguir será definida uma secção hero com duas secções em display grid -->
+    <hero>
+        <div class="hero-reservation-grid">
+            
+            <div class="reservation-image">
+                <div class="grow">
+                    <img src="./assets/images/Entryway-Restaurant-Doors-Branded-Group-jpg-1.jpg">
+                </div>
+            </div>
+         
+            
+            <div class="reservation-form">
+                <form action="reservation_form.html" method="post" id="reservation-form">
+    
+                <h1>Let's schedule a reservation for you!</h1>
+    
+                <fieldset class="personal-info">
+                <legend>Allow us to get to know you better!</legend>
+                <br>
+                <div class="name">
+                    <div class="name-grid">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" name="first-name" id="first-name" minsize="2" pattern="[A-Z][a-z]" required>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" name="last-name" id="last-name" pattern="[A-Z][a-z]" required>    
+                    </div>
+                </div>
+                <br>
+    
+                <div class="usual-costumer">
+                    <div class="costumer-grid">
+                        <label for="costumer">Are you already a customer of ours?</label>
+                        <label for="costumer-yes">Yes</label>
+                        <input type="radio" name="our-costumer" id="our-costumer" value="yes" checked>
+                        <label for="costumer-no">No</label>
+                        <input type="radio" name="our-costumer" id="our-costumer" value="no">            
+                    </div>
+                </div>
+                <br>
+    
+                <div class="contacts">
+                    <div class="contacts-grid">
+                        <label for="phonenumber">Mobile Phone:</label>
+                        <input type="text" name="phonenumber" id="phonenumber" minlength="9" maxlength="9" pattern="[0-9]" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" pattern="[A-Z][a-z][0-9]" required>
+                    </div>
+                </div>
+                <br>
+    
+                <div class="billing">
+                    <label for="taxpayer-number">Taxpayer Number:</label>
+                    <input type="text" name="taxpayer-number" id="taxpayer-number" minlength="9" maxlength="9" pattern="[0-9]">
+                </div>
+                </fieldset>
+                <br>
+    
+                <fieldset class="reservation-info">
+                <legend>Tell us the details of your reservation!</legend>
+                <br>
+    
+                <div class="datetime">
+                    <label for="reservation-date-time">Date and time of your reservation:</label>
+                    <input type="datetime-local" name="reservation-date-time" id="reservation-date-time" required>
+                </div>
+                <br>
+    
+                <div class="spaces">
+                    <div class="spaces-flex">
+                        <label for="reservation-space">Which of the dining spaces do you prefer:</label>
+                        <label for="mariachis">Mariachis</label>
+                        <input type="checkbox" name="mariachis" id="mariachis">
+                        <label for="frida">Frida</label>
+                        <input type="checkbox" name="frida" id="frida">
+                        <label for="riviera">Riviera</label>
+                        <input type="checkbox" name="riviera" id="riviera">
+                        <label for="upperroom">Upper Room</label>
+                        <input type="checkbox" name="upperroom" id="upperroom">
+                    </div>
+                </div>
+                <br>
+    
+                <div class="occupation">
+                    <label for="seats-number">Number of seats:</label>
+                    <select name="seats-number" id=seats-number>
+                        <option value="null"> </option>
+                        <option value="five-people">Up to 5 seats</option>
+                        <option value="six-to-ten">Between 6 and 10 seats</option>
+                        <option value="eleven-to-twenty">Between 11 and 20 seats</option>
+                        <option value="plus-twenty">More than 20 places</option>
+                    </select>
+                </div>
+                <br>
+    
+                <div class="babychair">
+                    <label for="babychair">Tell us if will you need baby chairs?</label>
+                    <select name="seats-number" id=seats-number>
+                        <option value="null"> </option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                    </select>
+                </div>
+                <br>
+    
+                <div class="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">I agree to the PichUrri booking terms.</label>
+                </div>
+                <br>
+    
+                <div class="reservation-button">
+                    <button type="submit" form="reservation-form" value="submit">Submit</button>
+                    <form action="reservation_form.html" method="post" id="reservation-form"></form>
+                </div>
+                </fieldset>
+                </form>    
+            </div>
+        </div>  
+        </hero> <!-- terminam os elementos da secção hero-->
+
+    <!--- A seguir será definida secção footer com quatro secções em display grid -->
+    <footer>
+            <hr>
+            <br>
+            <div class="footer-grid">
+                <div class="footergrid-logoicon">
+                    <div class="logotipo"><p1>Pich</p1><b>U</b><p2>rri</p2></div>
+                    <h2>We're here!</h2>
+                    
+                    <!--- icons de https://fontawesome.com/icons-->
+                    <div class="logoicon-media">
+                        <a href="https://www.instagram.com/" class="icon-link">
+                            <img class="image-icon" src="./assets/icons/instagram.jpg" alt="instagram"></a>
+                        <a href="https://twitter.com/tweeter" class="icon-link">
+                            <img class="image-icon" src="./assets/icons/tweeter.png" alt="tweeter"></a>
+                        <a href="https://web.whatsapp.com/" class="icon-link">
+                            <img class="image-icon" src="./assets/icons/whattsapp.png" alt="whattsapp"></a>
+                        <a href="https://www.facebook.com/" class="icon-link">
+                            <img class="image-icon" src="./assets/icons/facebook.jpg" alt="facebook"></a>
+                    </div>
+                </div>
+    
+                <ul class="footer-grid-list">
+                    <li><h3>Spaces</h3></li>
+                    <li><a href="./spaces.html" class="footer-link">Mariachis Room</a></li>
+                    <li><a href="./spaces.html" class="footer-link">Frida Room</a></li>
+                    <li><a href="./spaces.html" class="footer-link">Mayas Room</a></li>
+                    <li><a href="./spaces.html" class="footer-link">Riviera Terrace</a></li>
+                </ul>
+    
+                <ul class="footer-grid-list">
+                    <li><h3>Menu</h3></li>
+                    <li><a href="./menu.html" class="footer-link">Appetizer</a></li>
+                    <li><a href="./menu.html" class="footer-link">Seafood Dishes</a></li>
+                    <li><a href="./menu.html" class="footer-link">Meat Dishes</a></li>
+                    <li><a href="./menu.html" class="footer-link">Desserts</a></li>
+                </ul>
+    
+                <div class="footer-grid-news">
+                    <h3>Newsletter</h3>
+                    <p>Enter your e-mail here! </p>
+    
+                    <div class="input-email">
+                        <input type="email" id="email">
+                        <button><i class="fa-solid fa-envelope"></i></button>
+                    </div>
+                
+                    <div class="footer-copyright">
+                        <p>&#169 2023 Paulo Santos<br> 
+                        All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>    
+    </footer>
+</body>
+        
+
