@@ -2,9 +2,14 @@
 
 /* ============= estilizar as quatro seccoes do hero ============= */
 
-hero{
+.hero-reservation {
     padding: 0px;
     margin-top: 0px;
+}
+
+.reservation-form p{
+    color: rgb(226, 236, 226);
+    font-size:large;
 }
 
 .hero-reservation-grid{
@@ -94,10 +99,9 @@ hero{
     display: inline;
 }
 
-.datetime{
+.date-time{
     box-sizing: border-box;
-    display: flex;
-    column-gap: 20px;
+    column-gap: 5px;
 }
 
 .spaces-flex{
@@ -109,10 +113,10 @@ hero{
 .occupation{
     box-sizing: border-box;
     display: flex;
-    column-gap: 30px;
+    column-gap: 20px;
 }
 
-.babychair{
+.baby-chair{
     box-sizing: border-box;
     display: flex;
     column-gap: 30px;

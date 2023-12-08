@@ -2,12 +2,12 @@
 
 /* ============= estilizar as quatro seccoes do hero ============= */
 
-hero-menu{
+.hero{
     padding: 0px;
     margin-top: 0px;
 }
 
-hero-menu .menu-title{
+.menu-title{
     margin-left: 70px;
     font-size: 40px;
     font-weight: 100;
@@ -57,7 +57,6 @@ hero-menu .menu-title{
     display: -webkit-box;     /* fallback */
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
-
 }
 
 .card-price{
